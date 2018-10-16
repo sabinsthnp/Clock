@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Clock</title>
+	<link target="blank" href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+	<link rel="apple-touch-icon" sizes="180x180" target="blank" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" target="blank" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" target="blank" href="/favicon-16x16.png">
+	<link rel="manifest" target="blank" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#4994dd">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+</head>
+<style type="text/css">
+*{
+	padding: 0;	margin: 0;	font-family: 'Ubuntu', sans-serif;
+}
+	#clock{
+		width: 410px;
+		height: 410px;
+		border-radius: 50%;
+		position: absolute;
+		left: 10px;
+		top: 50px;
+		transform: rotate(-90deg);
+		box-shadow: 0px 0px 9px -2px #a7a0a0;
+	}
+	#bag{
+		width: 380px;
+		height: 380px;
+		border-radius: 50%;
+		background-color: #fff;
+		position: absolute;
+		left:15px;
+		top: 15px;
+		transform: rotate(-90deg);
+	}
+	#bag2{
+		width: 400px;
+		height: 400px;
+		border-radius: 50%;
+		background-color: #fff;
+		position: absolute;
+		left:5px;
+		top: 5px;
+		transform: rotate(-90deg);
+	}
+	#bag3{
+		width: 390px;
+		height: 390px;
+		border-radius: 50%;
+		background-color: #fff;
+		position: absolute;
+		left:10px;
+		top: 10px;
+		transform: rotate(-90deg);
+	}
+
+	.handles{
+		width:370px;
+		height: 5px;
+		margin-top: 200px;
+		transform: rotate(0deg);
+		position: absolute; 
+		border:0px solid red;
+		border: 0px solid red;
+left:20px ;
+	}
+	.noch{
+		width:410px;
+		height: 2px;
+		background-color: #000;
+		margin-top: 203px;
+		transform: rotate(0deg);
+		position: absolute; 
+		border:0px;
+	}
+	.one{
+		transform: rotate(30deg);
+	}.two{
+		transform: rotate(60deg);
+	}.three{
+		transform: rotate(90deg);
+	}.four{
+		transform: rotate(1200deg);
+	}.five{
+		transform: rotate(150deg);
+	}.six{
+		transform: rotate(180deg);
+	}.seven{
+		transform: rotate(2100deg);
+	}.eight{
+		transform: rotate(240deg);
+	}.nine{
+		transform: rotate(270deg);
+	}.ten{
+		transform: rotate(300deg);
+	}.elevel{
+		transform: rotate(330deg);
+	}.twevelv{
+		transform: rotate(360deg);
+	}
+	.xx{
+		width:410px;
+		height: 1px;
+		background-color: #000;
+		margin-top: 203px;
+		transform: rotate(0deg);
+		position: absolute; 
+		border:0px;
+	}
+	
+	#hrs{
+		background-image: linear-gradient(to right, #fff  45%,#b6c3c9 0%);
+	}
+	#min{
+		background-image: linear-gradient(to right, #fff  41%,#b6c3c9 0%);
+	}
+	#sec{
+		background-image: linear-gradient(to right,  #fff 40%,#edbec5 0%);
+	}
+	#minsec{
+		background-image: linear-gradient(to right, #fff  50%,#e3cccf  50%); 
+	}
+	#time{
+		text-align: center;
+	}
+	#text{
+		margin-top: 440px;
+		padding:5px;
+	}
+</style>
+<body>
+
+<p><center>A clock:</center></p>
+<div id="clock" onclick="loop()">
+	<div id="minsec" class="handles"></div>
+	<div id="bag"></div>
+	<div id="" class="xx" style="transform: rotate(7.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(15deg);"></div>
+	<div id="" class="xx" style="transform: rotate(22.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(30deg);"></div>
+	<div id="" class="xx" style="transform: rotate(37.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(7.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(45deg);"></div>
+	<div id="" class="xx" style="transform: rotate(52.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(60deg);"></div>
+	<div id="" class="xx" style="transform: rotate(67.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(75deg);"></div>
+	<div id="" class="xx" style="transform: rotate(82.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(90deg);"></div>
+	<div id="" class="xx" style="transform: rotate(97.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(105deg);"></div>
+	<div id="" class="xx" style="transform: rotate(112.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(120deg);"></div>
+	<div id="" class="xx" style="transform: rotate(127.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(135deg);"></div>
+	<div id="" class="xx" style="transform: rotate(142.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(150deg);"></div>
+	<div id="" class="xx" style="transform: rotate(157.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(164.5deg);"></div>
+	<div id="" class="xx" style="transform: rotate(172deg);"></div>
+	<div id="bag2"></div>
+	<div id="" class="noch one"></div>
+	<div id="" class="noch two"></div>
+	<div id="" class="noch three"></div>
+	<div id="" class="noch four"></div>
+	<div id="" class="noch five"></div>
+	<div id="" class="noch six"></div>
+	<div id="" class="noch seven"></div>
+	<div id="" class="noch eight"></div>
+	<div id="" class="noch nine"></div>
+	<div id="" class="noch ten"></div>
+	<div id="" class="noch elevel"></div>
+	<div id="" class="noch twevelv"></div>
+	<div id="bag3"></div>
+	<div id="hrs" class="handles" style=""></div>
+	<div id="min" class="handles" style=""></div>
+	<div id="sec" class="handles" style=""></div>
+</div>
+<div id="text">
+<h1>What if we could stop time? </h1>
+<p>Actually we can! In my project we can stop the time(the clock itself) and start it again,try it now on this project:</p>
+<p id="time"></p><center>
+<button onclick="myStopFunction()">Stop time</button>
+<button onclick="start()">Start time</button></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<script>
+var myVar = setInterval(myTimer, 1000);
+var hrs =document.getElementById("hrs");
+var min =document.getElementById("min");
+var sec =document.getElementById("sec");
+var minsec =document.getElementById("minsec");
+
+function myTimer() {
+    var d = new Date();
+    if (d.getHours()>=12) {
+    	var hours = d.getHours()-12;
+    	var state="PM";
+    }else{
+    	var hours = d.getHours();
+    	var state="AM";
+    }
+    var hoursdeg = (360/12)*hours;
+    hrs.style.transform="rotate("+hoursdeg+"deg)";
+    var minutes = d.getMinutes();
+    var minutesdeg = (360/60)*minutes;
+    min.style.transform="rotate("+minutesdeg+"deg)";
+    var seconds = d.getSeconds();
+    var secondsdeg = (360/60)*seconds;
+    sec.style.transform="rotate("+secondsdeg+"deg)";
+    var miliseconds = d.getMilliseconds();
+    var milisecondsdeg = (360/1000)*miliseconds;
+    minsec.style.transform="rotate("+milisecondsdeg+"deg)";
+    time.innerHTML = hours+":':"+minutes+":'':"+seconds+":'':"+" "+state;
+
+}
+var inti=0;
+function loop(){
+	if (inti==0) {
+		myStopFunction();
+	}else{
+		start();
+	}
+}
+function myStopFunction() {
+    clearInterval(myVar);
+    inti =1;
+}
+function start() {
+    location.reload();
+    inti=0;
+}
+</script>
+
+</body>
+</html>
